@@ -36,7 +36,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "server": "json-server --watch db.json --port 5000",
+    "server": "node server.js",
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",

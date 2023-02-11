@@ -29,6 +29,8 @@
 
 ## About The Project
 
+- This project run with JSON server hoisted at [**here**](https://github.com/nquocviet/nals-blogging-test-json-server)
+
 ### Requirements
 
 - Node version v16.17.0
