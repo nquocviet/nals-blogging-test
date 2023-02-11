@@ -1,0 +1,25 @@
+.snackbar {
+  --snackbar-width: 288px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.375rem 1rem;
+  background-color: rgb(var(--text-color));
+  color: rgb(var(--background-color));
+  min-width: var(--snackbar-width);
+  font-size: var(--fs-sm);
+  border-radius: 0.375rem;
+}
+
+.snackbar-message {
+  flex: 1;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-weight: var(--fw-semibold);
+}
+
+.snackbar-action {
+  margin-left: 0.25rem;
+  padding: 0.375rem;
+  line-height: 1;
+}

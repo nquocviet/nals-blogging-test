@@ -1,0 +1,54 @@
+.pagination {
+  justify-content: center;
+}
+
+.pagination-item > * {
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  height: 40px;
+}
+
+.pagination-item-default > * {
+  background-color: rgb(var(--background-color)) !important;
+  color: rgb(var(--text-color)) !important;
+}
+
+.pagination-item-default > *:hover {
+  color: rgb(var(--text-color)) !important;
+  background-color: rgb(var(--gray-100)) !important;
+}
+
+[data-theme='dark'] .pagination-item-default > *:hover {
+  background-color: rgb(var(--gray-600)) !important;
+}
+
+.pagination-item-default > *:focus {
+  box-shadow: none !important;
+  color: rgb(var(--text-color)) !important;
+  background-color: rgb(var(--gray-100)) !important;
+}
+
+[data-theme='dark'] .pagination-item-default > *:focus {
+  background-color: rgb(var(--gray-600)) !important;
+}
+
+.pagination-item-disabled > * {
+  cursor: not-allowed;
+}
+
+.pagination-item-disabled > *:hover,
+.pagination-item-disabled > *:focus {
+  background-color: transparent !important;
+}
+
+li.pagination-item-active > * {
+  color: rgb(var(--background-color)) !important;
+  background-color: rgb(var(--text-color)) !important;
+  border-color: rgb(var(--text-color)) !important;
+}
+
+li.pagination-item-active > *:hover {
+  color: rgb(var(--background-color)) !important;
+}

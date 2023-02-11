@@ -1,0 +1,46 @@
+.title {
+  font-size: var(--fs-display-sm);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.form {
+  max-width: 500px;
+  margin: 2rem auto 3rem;
+}
+
+div.button-dropdown {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+div.button-dropdown > button {
+  position: relative;
+  z-index: calc(var(--z-elevate) + 1);
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent !important;
+  color: rgb(var(--text-color)) !important;
+  border-color: transparent !important;
+  line-height: 1;
+  box-shadow: unset !important;
+}
+
+div.button-dropdown > button:hover,
+div.button-dropdown > button:focus,
+div.button-dropdown > button:active {
+  background-color: rgb(var(--gray-100)) !important;
+  border-color: rgb(var(--gray-100)) !important;
+  color: rgb(var(--gray-900)) !important;
+}
+
+div.button-dropdown > button::after {
+  display: none !important;
+}
+
+div.button-dropdown-menu > *:focus,
+div.button-dropdown-menu > *:hover {
+  background-color: rgb(var(--gray-100)) !important;
+  color: rgb(var(--gray-900)) !important;
+}

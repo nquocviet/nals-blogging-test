@@ -1,0 +1,12 @@
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.empty-state {
+  font-size: var(--fs-text-lg);
+  text-align: center;
+}

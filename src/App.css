@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand/Quicksand-Light.ttf') format('truetype');
+  font-weight: 300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+:root {
+  --background-color: 255 255 255;
+  --text-color: 16 16 24;
+
+  --gray-100: 242 244 247;
+  --gray-200: 234 236 240;
+  --gray-300: 208 213 221;
+  --gray-400: 152 162 179;
+  --gray-500: 102 112 133;
+  --gray-600: 71 84 103;
+  --gray-700: 52 64 84;
+  --gray-800: 29 41 57;
+  --gray-900: 16 24 40;
+
+  --red-100: 254 243 242;
+  --red-200: 254 205 202;
+  --red-300: 253 162 155;
+  --red-400: 249 112 102;
+  --red-500: 240 68 56;
+  --red-600: 217 45 32;
+  --red-700: 180 35 24;
+  --red-800: 145 32 24;
+  --red-900: 122 39 26;
+
+  --fs-text-sm: 0.875rem;
+  --fs-text-md: 1rem;
+  --fs-text-lg: 1.125rem;
+  --fs-text-xl: 1.25rem;
+  --fs-display-xs: 1.5rem;
+  --fs-display-sm: 1.875rem;
+  --fs-display-md: 2.25rem;
+  --fs-display-lg: 3rem;
+  --fs-display-xl: 3.75rem;
+  --fs-display-2xl: 4.5rem;
+
+  --lh-text-sm: 1.25rem;
+  --lh-text-md: 1.5rem;
+  --lh-text-lg: 1.75rem;
+  --lh-text-xl: 1.875rem;
+  --lh-display-xs: 2rem;
+  --lh-display-sm: 2.375rem;
+  --lh-display-md: 2.75rem;
+  --lh-display-lg: 3.75rem;
+  --lh-display-xl: 4.625rem;
+  --lh-display-2xl: 5.625rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --ff-quicksand: 'Quicksand', sans-serif;
+
+  --z-negative: -1;
+  --z-elevate: 1;
+  --z-dropdown: 300;
+  --z-sticky: 400;
+  --z-drawer: 400;
+  --z-modal: 500;
+  --z-popover: 500;
+  --z-maximum: 9999;
+
+  --tight-screen: 640px;
+
+  --shadow-sm: 0px 1px 2px rgba(16, 24, 40, 0.06),
+    0px 1px 3px rgba(16, 24, 40, 0.1);
+  --shadow-md: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  --shadow-lg: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+}
+
+[data-theme='dark'] {
+  --background-color: 16 16 24;
+  --text-color: 255 255 255;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+body {
+  background-color: rgb(var(--background-color));
+  color: rgb(var(--text-color));
+  font-family: var(--ff-quicksand);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-text-md);
+  line-height: var(--lh-text-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.public-DraftEditorPlaceholder-root {
+  position: absolute;
+  color: rgb(var(--gray-500));
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.public-DraftStyleDefault-pre {
+  background-color: rgb(var(--background-color));
+  color: rgb(var(--text-color));
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--gray-200));
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--gray-400));
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(var(--gray-300));
 }

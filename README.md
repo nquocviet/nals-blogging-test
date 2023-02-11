@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- INTRODUCTION -->
+<div align="center">
+  <h2 align="center">Blogging Test</h2>
+</div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+<details open>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#installation">Installation</a>
+    </li>
+    <li>
+      <a href="#license">License</a>
+    </li>
+  </ol>
+</details>
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node version v16.17.0
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All major frameworks/libraries used to bootstrap this project.
 
-### `npm run build`
+- `react` - v18.2.0
+- `react-dom` - v18.2.0
+- `bootstrap` - v3.1.8 - A frontend CSS framework
+- `react-hook-form` - v7.36.1 - Custom hook for managing forms
+- `@reduxjs/toolkit` - 1.9.0 - React library for state management
+- `yup` - 1.0.0 - Used for validations
+- `json-server` - 0.17.1 - Required for create a full fake REST API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right"><a href="#readme-top">Back to top</a></p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- INSTALLATION -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To set up your project locally, simply run the following example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Client-side
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Create .env file in the root directory `.\client\.env`.
+2. Copy all environment variables from file `.\client\.env.example` to the file just created.
+3. Install NPM packages. You can feel free to install with `npm install` or `yarn install`.
+   ```sh
+   npm install
+   ```
+4. Run both the development server and JSON server
+   ```sh
+   npm run dev
+   npm run server
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="right"><a href="#readme-top">Back to top</a></p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- LICENSE -->
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right"><a href="#readme-top">Back to top</a></p>

@@ -1,0 +1,29 @@
+input.form-control,
+textarea.form-control {
+  background-color: rgb(var(--background-color));
+  color: rgb(var(--text-color));
+  border-color: rgb(var(--gray-300));
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: rgb(var(--gray-600));
+  color: rgb(var(--text-color));
+  background-color: transparent;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  box-shadow: none;
+}
+
+span.input-group-leading,
+span.input-group-trailing {
+  background-color: rgb(var(--background-color));
+  color: rgb(var(--text-color));
+  flex-shrink: 0;
+}

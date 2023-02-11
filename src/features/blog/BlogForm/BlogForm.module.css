@@ -1,0 +1,8 @@
+.error-fields {
+  background-color: rgb(var(--red-100));
+  color: rgb(var(--red-600));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  font-weight: var(--fw-medium);
+}

@@ -1,0 +1,35 @@
+.title {
+  font-size: var(--fs-display-lg);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-display-lg);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.date {
+  margin-bottom: 2.5rem;
+  color: rgb(var(--gray-400));
+  text-align: center;
+}
+
+.description {
+  font-size: var(--fs-text-lg);
+  line-height: var(--lh-text-lg);
+  white-space: pre-wrap;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  font-size: var(--fs-text-lg);
+  line-height: var(--lh-text-lg);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  padding: 0;
+}

@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  background-color: rgb(var(--background-color));
+  color: rgb(var(--text-color));
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(var(--gray-300));
+  border-radius: 0.25rem;
+  outline: none;
+  gap: 0.75rem;
+}
+
+.button:hover {
+  background-color: rgb(var(--gray-100));
+}
+
+.button:focus,
+.button:active {
+  border-color: rgb(var(--gray-600));
+}
+
+[data-theme='dark'] .button:hover {
+  background-color: rgb(var(--gray-600));
+}
