@@ -168,13 +168,15 @@ export const postSlice = createSlice({
     builder.addCase(findPosts.fulfilled, (state, action) => {
       const { data, count } = action.payload;
 
-      state.loading = false;
       state.posts = data;
       state.count = count;
+      state.loading = false;
     });
 
-    builder.addCase(findPosts.rejected, (state) => {
-      state.loading = false;
+    builder.addCase(findPosts.rejected, (state, action) => {
+      if ((action.payload as any)?.code !== 'ERR_CANCELED') {
+        state.loading = false;
+      }
     });
 
     builder.addCase(findPostById.pending, (state) => {

@@ -13,17 +13,15 @@ const BlogList: React.FunctionComponent<TBlogListProps> = ({
   posts,
   loading
 }) => {
-  if (!posts?.length && !loading) {
-    return (
-      <div className={styles['empty-state']}>There is no posts available</div>
-    );
-  }
-
   return (
     <section className={styles['blog-list']}>
-      {loading
-        ? [...Array(5)].map((_, index) => <BlogCardSkeleton key={index} />)
-        : posts.map((post) => <BlogCard key={post.id} {...post} />)}
+      {loading ? (
+        [...Array(5)].map((_, index) => <BlogCardSkeleton key={index} />)
+      ) : posts?.length ? (
+        posts.map((post) => <BlogCard key={post.id} {...post} />)
+      ) : (
+        <div className={styles['empty-state']}>There is no posts available</div>
+      )}
     </section>
   );
 };
